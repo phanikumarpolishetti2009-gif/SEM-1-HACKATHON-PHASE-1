@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class QUESTION2A {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Panal ID");
+        int ID = scanner.nextInt();
+        System.out.println("Energy generated in KWH");
+        double energy = scanner.nextDouble();
+        System.out.println("Number of solar panels");
+        int npanles = scanner.nextInt();
+        System.out.println("System status");
+        String status = scanner.next();
+
+        System.out.println("Panel ID : "+ID);
+        System.out.println("Energy generated : "+energy);
+        System.out.println("Number of Solar Panels : "+npanles);
+        System.out.println("System Status : "+status);
+
+        scanner.close();
+    }
+}
