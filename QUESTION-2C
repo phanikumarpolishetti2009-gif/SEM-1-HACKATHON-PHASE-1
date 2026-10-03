@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class QUESTION2C {
+    double calculateTotalEnergy(double morningenergy,double eveniningenergy){
+         double totalenergy = morningenergy+eveniningenergy;
+     return totalenergy;
+}
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(" Enter Morning Energy Generated ");
+        double morningenergy = scanner.nextDouble();
+        System.out.println("Enter Evenining Energy Generated");
+        double eveniningenergy = scanner.nextDouble();
+        QUESTION2C total = new QUESTION2C();
+        System.out.println("Total Energy Generated : "+total.calculateTotalEnergy(morningenergy,eveniningenergy));
+        scanner.close();
+    }
+}
